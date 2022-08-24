@@ -1,0 +1,15 @@
+name: SuperStaffChat
+version: 2.0.2
+main: com.pedrojm96.superstaffchat.Bukkit.BukkitStaffChat
+author: PedroJM96
+description: Add chat channels to staff members.
+
+commands:
+    screload:
+        usage: /<command>
+        aliases: [scr]
+        description: StaffChat Reload.
+    staffonline:
+        usage: /<command>
+        aliases: [staffon]
+        description: StaffChat Reload.

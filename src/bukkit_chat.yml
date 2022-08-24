@@ -1,0 +1,62 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |       _____                       _____ _         __  __  _____ _           _                | #
+# |      / ____|                     / ____| |       / _|/ _|/ ____| |         | |               | #
+# |     | (___  _   _ _ __   ___ _ _| (___ | |_ __ _| |_| |_| |    | |__   __ _| |_              | #
+# |      \___ \| | | | '_ \ / _ \ '__\___ \| __/ _` |  _|  _| |    | '_ \ / _` | __|             | #
+# |      ____) | |_| | |_) |  __/ |  ____) | || (_| | | | | | |____| | | | (_| | |_              | #
+# |     |_____/ \__,_| .__/ \___|_| |_____/ \__\__,_|_| |_|  \_____|_| |_|\__,_|\__|             | #
+# |                  | |                                                                         | #
+# |                  |_|                                                                         | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  WIKI:        https://dev.pedrojm96.com/en:superstaffchat                                    | #
+# |  BUG REPORTS: https://www.spigotmc.org/threads/                                              | #
+# |  AUTHOR: PedroJM96 (pedrojm96.com)                                                           | #
+# |  OFFICIAL SERVER: mc.minepal.net                                                             | #
+# |                                                                                              | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          Nodes                                               | #
+# +----------------------------------------------------------------------------------------------+ #
+# |                                                                                              | #
+# |  command: The name of the command to enter the chat.                                         | #
+# |  alias: The alias of the command to enter the chat.                                          | #
+# |  permission: The permission to see and use the chat.                                         | #
+# |  format: The format that the chat will have.                                                 | #
+# |                                                                                              | #
+# |                                                                                              | #
+# +----------------------------------------------------------------------------------------------+ #
+
+# +----------------------------------------------------------------------------------------------+ #
+# | To create more chat simply copy and paste the previous one and edit.                         | #
+# +----------------------------------------------------------------------------------------------+ #
+
+mod:
+  command: modchat
+  alias: mc
+  permission: staffchat.mod
+  format: '&f[&9MOD Chat&f] &6%world% &a%player%&f: &e%message%'
+staff:
+  command: staffchat
+  alias: sc
+  permission: staffchat.staff
+  format: '&f[&b&lStaff Chat&f] &6%world% &a%player%&f: &e%message%'
+mapmaker:
+  command: mapmakerchat
+  alias: mapc
+  permission: staffchat.mapmaker
+  format: '&f[&6MapMaker Chat&f] &6%world% &a%player%&f: &e%message%'
+admin:
+  command: adminchat
+  alias: ac
+  permission: staffchat.admin
+  format: '&f[&cADMIN Chat&f] &6%world% &a%player%&f: &e%message%'
+vip:
+  command: vipchat
+  alias: cvip
+  permission: staffchat.vip
+  format: '&f[&5MPL Chat&f] &6%world% &a%player%&f: &e%message%'

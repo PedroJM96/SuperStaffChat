@@ -1,0 +1,42 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |       _____                       _____ _         __  __  _____ _           _                | #
+# |      / ____|                     / ____| |       / _|/ _|/ ____| |         | |               | #
+# |     | (___  _   _ _ __   ___ _ _| (___ | |_ __ _| |_| |_| |    | |__   __ _| |_              | #
+# |      \___ \| | | | '_ \ / _ \ '__\___ \| __/ _` |  _|  _| |    | '_ \ / _` | __|             | #
+# |      ____) | |_| | |_) |  __/ |  ____) | || (_| | | | | | |____| | | | (_| | |_              | #
+# |     |_____/ \__,_| .__/ \___|_| |_____/ \__\__,_|_| |_|  \_____|_| |_|\__,_|\__|             | #
+# |                  | |                                                                         | #
+# |                  |_|                                                                         | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  WIKI:        http://en.wiki.pedrojm96.com/SuperStaffChat                                    | #
+# |  BUG REPORTS: https://www.spigotmc.org/threads/                                              | #
+# |  AUTHOR: PedroJM96 (pedrojm96.com)                                                           | #
+# |  OFFICIAL SERVER: mc.minepal.net                                                             | #
+# |                                                                                              | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+#The prefix that the plugin will show in the messages.
+prefix: '&6SuperStaffChat &e>&7 '
+
+#Check for updates.
+update-check: true
+
+#Allow use of colors in chat.
+chat-color: true
+
+#The language of the plugin messages (ES,EN).
+messages: EN
+
+#To show message to all staff members when a staff member connects.
+join-staff-messages: true
+
+#Staff permission to be considered in the /staffonline command
+staff-online-permission: staff.online
+
+#Staff permission to be considered when entering the server.
+staff-join-permission: staff.join
+

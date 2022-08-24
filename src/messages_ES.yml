@@ -1,0 +1,6 @@
+command-reload: "&7La configuración y mensajes a sido cargado."
+no-permission: "&7No tienes permiso para usar este comando."
+channel-open: "&7Chat %chat% abierto."
+channel-closed: "&7Chat %chat% cerrado."
+join-staff: "&7El Staff &6%player% &7entro al servidor."
+online-staff: "&f[&a%world%&f] &6%player%"
