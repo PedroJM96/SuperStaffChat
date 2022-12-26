@@ -4,7 +4,7 @@
   <groupId>com.pedrojm96</groupId>
   <artifactId>SuperStaffChat</artifactId>
   <name>SuperStaffChat</name>
-  <version>2.0.2</version>
+  <version>2.0.4</version>
   <description>Add chat channels to staff members.</description>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -45,6 +45,14 @@
                   <pattern>org.bstats</pattern>
                   <shadedPattern>com.pedrojm96.superstaffchat.libs.org.bstats</shadedPattern>
                 </relocation>
+                <relocation>
+                  <pattern>org.apache.commons</pattern>
+                  <shadedPattern>com.pedrojm96.superstaffchat.libs.org.apache.commons</shadedPattern>
+                </relocation>
+                <relocation>
+                  <pattern>com.google.gson</pattern>
+                  <shadedPattern>com.pedrojm96.superstaffchat.libs.com.google.code.gson</shadedPattern>
+                </relocation>
               </relocations>
               <filters>
                 <filter>
@@ -62,6 +70,7 @@
                     <exclude>com/pedrojm96/core/CoreEncryption*.class</exclude>
                     <exclude>com/pedrojm96/core/inventory/**</exclude>
                     <exclude>com/pedrojm96/core/command/CoreExecuteComands*.class</exclude>
+                    <exclude>com/pedrojm96/core/data/**</exclude>
                   </excludes>
                 </filter>
               </filters>
@@ -84,6 +93,10 @@
       <id>bungeecord-repo</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </repository>
+    <repository>
+      <id>placeholderapi</id>
+      <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+    </repository>
   </repositories>
   <dependencies>
     <dependency>
@@ -103,6 +116,12 @@
       <artifactId>bungeecord-api</artifactId>
       <version>1.18-R0.1-SNAPSHOT</version>
       <type>javadoc</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>me.clip</groupId>
+      <artifactId>placeholderapi</artifactId>
+      <version>2.10.9</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>

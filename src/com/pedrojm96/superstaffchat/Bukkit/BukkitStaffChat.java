@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 import org.bstats.bukkit.Metrics;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -14,6 +15,7 @@ import com.pedrojm96.core.CoreConfig;
 import com.pedrojm96.core.CoreLog;
 import com.pedrojm96.core.CorePlugin;
 import com.pedrojm96.core.CoreSpigotUpdater;
+import com.pedrojm96.core.CoreVariables;
 import com.pedrojm96.core.command.CoreCommands;
 import com.pedrojm96.superstaffchat.AllString;
 import com.pedrojm96.superstaffchat.Staff;
@@ -50,6 +52,18 @@ public class BukkitStaffChat extends JavaPlugin implements CorePlugin {
 	    AllString.LoadString(this);
 	    chat = new CoreConfig(this,"chat",log,this.getResource("bukkit_chat.yml"),false);
 	    loadChat();
+	    
+
+		if(Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")){			
+			new PlaceholderApiExpansion(this).register();
+			CoreVariables.placeholderAPI(true);
+			log.alert("Hooked PlaceholderAPI");
+		}
+		if(Bukkit.getPluginManager().isPluginEnabled("MVdWPlaceholderAPI")){
+			MVdWPlaceholderAPI.register(this);
+			log.alert("&7Hooked MVdWPlaceholderAPI");
+		}
+		
 	    checkForUpdates();
 	    @SuppressWarnings("unused")
 		Metrics metrics = new Metrics(this,	15364);

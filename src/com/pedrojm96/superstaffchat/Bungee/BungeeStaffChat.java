@@ -30,7 +30,7 @@ public class BungeeStaffChat extends Plugin{
 	
 	public void onEnable() {
 		plugin = this;
-		log = new CoreLog(this,CoreLog.Color.RED);
+		log = new CoreLog(this,"StaffChat",CoreLog.Color.RED);
 		log.line();
 		log.info("SuperStaffChat v" + getDescription().getVersion() + " is being loaded...");
 		log.info("Plugin Create by PedroJM96.");
