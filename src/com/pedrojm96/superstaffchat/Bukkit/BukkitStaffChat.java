@@ -59,11 +59,7 @@ public class BukkitStaffChat extends JavaPlugin implements CorePlugin {
 			CoreVariables.placeholderAPI(true);
 			log.alert("Hooked PlaceholderAPI");
 		}
-		if(Bukkit.getPluginManager().isPluginEnabled("MVdWPlaceholderAPI")){
-			MVdWPlaceholderAPI.register(this);
-			log.alert("&7Hooked MVdWPlaceholderAPI");
-		}
-		
+
 	    checkForUpdates();
 	    @SuppressWarnings("unused")
 		Metrics metrics = new Metrics(this,	15364);
